@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Scroll, ScrollControls } from "@react-three/drei";
 
-import { Space, Titles } from "./components/canvas";
+import { Space, Titles, Hero3D } from "./components/canvas";
 
 import "./App.css";
 
@@ -16,6 +16,7 @@ const App = () => {
                         <Scroll>
                             <Space />
                             <Titles />
+                            <Hero3D />
                         </Scroll>
                     </Suspense>
                 </ScrollControls>
