@@ -2,7 +2,13 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Scroll, ScrollControls } from "@react-three/drei";
 
-import { Space, Titles, Hero3D, Meteorites } from "./components/canvas";
+import {
+    Space,
+    Titles,
+    Hero3D,
+    Meteorites,
+    Experience,
+} from "./components/canvas";
 
 import "./App.css";
 
@@ -18,6 +24,7 @@ const App = () => {
                             <Titles />
                             <Hero3D />
                             <Meteorites />
+                            <Experience />
                         </Scroll>
                     </Suspense>
                 </ScrollControls>
