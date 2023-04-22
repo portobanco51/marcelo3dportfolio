@@ -8,6 +8,7 @@ import {
     Hero3D,
     Meteorites,
     Experience,
+    ContactBg,
 } from "./components/canvas";
 
 import "./App.css";
@@ -25,6 +26,7 @@ const App = () => {
                             <Hero3D />
                             <Meteorites />
                             <Experience />
+                            <ContactBg />
                         </Scroll>
                     </Suspense>
                 </ScrollControls>
