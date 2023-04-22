@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Scroll, ScrollControls } from "@react-three/drei";
+import { NavBar } from "./components";
 
 import {
     Space,
@@ -18,6 +19,10 @@ const App = () => {
         <>
             <Canvas>
                 <ScrollControls pages={6.5} damping={0.1} distance={0.8}>
+                    {/* 2D Layer */}
+                    <Scroll html className="text-container">
+                        <NavBar />
+                    </Scroll>
                     {/* 3D Layer */}
                     <Suspense>
                         <Scroll>
