@@ -63,3 +63,16 @@ body,
 span {
     color: var(--color-green);
 }
+
+.skill-card {
+    scroll-margin-inline: 1rem;
+    scroll-snap-align: start;
+    backdrop-filter: blur(3px);
+}
+
+.card-img {
+    max-width: 7rem;
+    max-height: 7rem;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 10px #00000090);
+}
