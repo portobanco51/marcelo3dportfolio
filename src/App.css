@@ -40,3 +40,26 @@ body,
 .link-item:focus {
     opacity: 1;
 }
+
+.container {
+    pointer-events: none;
+    min-height: 100svh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    scroll-behavior: smooth;
+}
+
+.main-title {
+    background-image: url("/fonts/moonFont.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+span {
+    color: var(--color-green);
+}
