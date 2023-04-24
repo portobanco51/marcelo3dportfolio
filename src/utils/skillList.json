@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HTML",
+        "logo": "icons/html.png"
+    },
+    {
+        "name": "CSS",
+        "logo": "icons/css.png"
+    },
+    {
+        "name": "SASS",
+        "logo": "icons/sass.png"
+    },
+    {
+        "name": "JAVASCRIPT",
+        "logo": "icons/js.svg"
+    },
+    {
+        "name": "TYPESCRIPT",
+        "logo": "icons/ts.svg"
+    },
+    {
+        "name": "REACT.js",
+        "logo": "icons/reactjs.png"
+    },
+    {
+        "name": "THREE.js",
+        "logo": "icons/threejs.svg"
+    },
+    {
+        "name": "NODE.js",
+        "logo": "icons/nodejs.png"
+    },
+    {
+        "name": "GIT",
+        "logo": "icons/git.png"
+    },
+    {
+        "name": "SCRUM",
+        "logo": "icons/scrum.png"
+    }
+]
