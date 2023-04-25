@@ -12,8 +12,8 @@ const NavBar = () => {
 
     return (
         <Box
-            display="flex"
-            flexDirection="row"
+            display={"flex"}
+            flexDirection={"row"}
             sx={{ justifyContent: { xs: "space-around", md: "space-evenly" } }}
             justifyContent={"space-around"}
             my={"1rem"}

@@ -109,6 +109,44 @@ span {
     scale: 1.1;
 }
 
+.contact-info {
+    backdrop-filter: blur(2px);
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.form-label {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    min-height: 2rem;
+    resize: none;
+}
+
+.form-label::placeholder {
+    font-family: var(--font-secondary);
+    color: #ffffff8e;
+    text-align: center;
+    font-size: 12px;
+}
+
+.submit {
+    font-family: var(--font-primary);
+    font-size: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color-green);
+    min-width: 50px;
+    padding: 0;
+    margin-inline: auto;
+    border: none;
+}
+
 /* ANIMATION */
 .skills-container {
     animation: scroll 45s linear 0s infinite;

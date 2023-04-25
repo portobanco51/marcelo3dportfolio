@@ -4,7 +4,7 @@ import SkillList from "../utils/skillList.json";
 
 const SkillsContainer = () => {
     return (
-        <Box display="flex" maxWidth="100%">
+        <Box display={"flex"} maxWidth={"100%"}>
             {SkillList.map((el, i) => (
                 <SkillCard key={i} logo={el.logo} name={el.name} />
             ))}
