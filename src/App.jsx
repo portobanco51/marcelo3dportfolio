@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Scroll, ScrollControls } from "@react-three/drei";
 import { NavBar } from "./components";
 
-import { Hero, SkillsBanner, Projects, Contact } from "./pages";
+import { Hero, SkillsBanner, Projects, Contact, Loading } from "./pages";
 
 import {
     Space,
@@ -19,6 +19,7 @@ import "./App.css";
 const App = () => {
     return (
         <>
+            <Loading />
             <Canvas>
                 <ScrollControls pages={6.5} damping={0.1} distance={0.8}>
                     {/* 2D Layer */}
