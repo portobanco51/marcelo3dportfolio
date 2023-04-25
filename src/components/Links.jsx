@@ -46,7 +46,7 @@ const Links = () => {
                 underline="none"
                 color="#ffffff"
                 href={Resume}
-                download={`Marcelo's_Resume.pdf`}>
+                download={`Marcelo's Resume.pdf`}>
                 Resume
             </Link>
         </Box>

@@ -20,8 +20,8 @@ const Contact = () => {
                 className="contact-info"
                 boxShadow={"0 0px 25px #00000090"}
                 bgcolor={"rgba(255,255,255, 0)"}
-                borderRadius="30px"
-                maxWidth="clamp(200px, 60vw, 690px)"
+                borderRadius={"30px"}
+                maxWidth={"clamp(200px, 60vw, 690px)"}
                 mx={"auto"}
                 justifyContent={"space-evenly"}
                 display={"flex"}
@@ -76,7 +76,7 @@ const Contact = () => {
                             placeholder="Name"
                             className="form-label"
                             id="name"
-                            aria-describedby="my-helper-text"
+                            aria-describedby="name"
                         />
 
                         <label hidden htmlFor="email"></label>
@@ -87,7 +87,7 @@ const Contact = () => {
                             placeholder="Email"
                             className="form-label"
                             id="email"
-                            aria-describedby="my-helper-text"
+                            aria-describedby="email"
                         />
 
                         <label hidden htmlFor="email"></label>
@@ -97,9 +97,9 @@ const Contact = () => {
                             rows="4"
                             required={true}
                             placeholder="Message"
-                            className=" form-label"
+                            className="form-label"
                             id="message"
-                            aria-describedby="my-helper-text"
+                            aria-describedby="message"
                         />
 
                         <input
