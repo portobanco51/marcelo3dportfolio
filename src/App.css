@@ -160,11 +160,6 @@ span {
     justify-content: center;
     transition: all 0.2s;
 }
-
-.loading {
-    cursor: wait;
-}
-
 .loadingBox-fade {
     opacity: 0;
     display: none;
@@ -172,6 +167,7 @@ span {
 }
 
 .loader {
+    cursor: wait;
     transform: rotateZ(90deg);
     position: relative;
     perspective: 1000px;

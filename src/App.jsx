@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Scroll, ScrollControls } from "@react-three/drei";
+import { Scroll, ScrollControls, useProgress } from "@react-three/drei";
 import { NavBar } from "./components";
 
 import { Hero, SkillsBanner, Projects, Contact, Loading } from "./pages";
@@ -17,9 +17,13 @@ import {
 import "./App.css";
 
 const App = () => {
+    const { progress } = useProgress();
+    const loaded = progress < 100 ? false : true;
     return (
         <>
-            <Loading />
+            <Suspense>
+                <Loading progress={progress} loaded={loaded} />
+            </Suspense>
             <Canvas>
                 <ScrollControls pages={6.5} damping={0.1} distance={0.8}>
                     {/* 2D Layer */}

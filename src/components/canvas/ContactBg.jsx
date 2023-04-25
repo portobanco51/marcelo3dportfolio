@@ -2,7 +2,7 @@ import { Earth } from "../models";
 
 const ContactBg = () => {
     return (
-        <mesh position={[0, -44.5, 3]}>
+        <mesh position={[0, -44.7, 3]}>
             <Earth />
         </mesh>
     );

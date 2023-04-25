@@ -10,7 +10,7 @@ const Contact = () => {
             position={"absolute"}
             display={"flex"}
             justifyContent={"flex-end"}
-            sx={{ gap: { xs: "18svh", sm: "28svh" } }}
+            sx={{ gap: { xs: "22svh", sm: "28svh" } }}
             mt={"-3svh"}
             minHeight={"100svh"}
             minWidth={"100%"}

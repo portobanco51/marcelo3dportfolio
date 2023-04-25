@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
-// import { Player } from "@lottiefiles/react-lottie-player";
 
-const Loading = ({ progress = 20, loaded = false }) => {
+const Loading = ({ progress, loaded }) => {
     return (
         <div className={`loadingBox ${loaded ? "loadingBox-fade" : ""}`}>
             <Box
@@ -12,23 +11,18 @@ const Loading = ({ progress = 20, loaded = false }) => {
                 sx={{ mt: { xs: "-20svh", sm: "-15svh" } }}>
                 <Box minHeight={"200px"} minWidth="200px">
                     <span className="loader"></span>
-                    {/* <Player
-                        renderer="svg"
-                        className="loading"
-                        autoplay
-                        loop
-                        src="https://lottie.host/09bf873e-d574-4f98-aa2b-6cc97dd0bb35/cI0dW5FOxm.json"
-                    /> */}
                 </Box>
                 <Box
-                    height={"0.3rem"}
-                    maxWidth={"280px"}
+                    height={"0.4rem"}
+                    maxWidth={"240px"}
                     width={"50svw"}
-                    bgcolor={"#fff"}>
+                    bgcolor={"#fff"}
+                    borderRadius={"50px"}>
                     <Box
-                        height={"0.3rem"}
+                        height={"0.4rem"}
                         width={`${progress}%`}
-                        bgcolor={"var(--color-green)"}></Box>
+                        bgcolor={"var(--color-green)"}
+                        borderRadius={"50px"}></Box>
                 </Box>
             </Box>
         </div>
