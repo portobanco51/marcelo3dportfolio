@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Scroll, ScrollControls } from "@react-three/drei";
 import { NavBar } from "./components";
 
-import { Hero } from "./pages";
+import { Hero, SkillsBanner } from "./pages";
 
 import {
     Space,
@@ -25,6 +25,7 @@ const App = () => {
                     <Scroll html className="text-container">
                         <NavBar />
                         <Hero />
+                        <SkillsBanner />
                     </Scroll>
                     {/* 3D Layer */}
                     <Suspense>

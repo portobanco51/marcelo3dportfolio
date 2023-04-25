@@ -1,3 +1,4 @@
 import Hero from './Hero'
+import SkillsBanner from './SkillsBanner'
 
-export { Hero }
+export { Hero, SkillsBanner }
