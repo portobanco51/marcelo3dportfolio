@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { Box, Typography } from "@mui/material";
+import { Links } from "../components";
 
 const Contact = () => {
     const formInfo = useRef();
@@ -8,9 +9,9 @@ const Contact = () => {
         <Box
             position={"absolute"}
             display={"flex"}
-            justifyContent={"center"}
-            sx={{ gap: { xs: "20svh", sm: "26svh" } }}
-            mt={"-1svh"}
+            justifyContent={"flex-end"}
+            sx={{ gap: { xs: "18svh", sm: "28svh" } }}
+            mt={"-3svh"}
             minHeight={"100svh"}
             minWidth={"100%"}
             top={"550dvh"}
@@ -29,7 +30,7 @@ const Contact = () => {
                     py: { sm: "1.5rem", xs: "1rem" },
                     px: { xs: "1rem", sm: "1rem" },
                     alignItems: { sm: "flex-start", xs: "center" },
-                    gap: { sm: "0.8rem", xs: "0rem" },
+                    gap: { sm: "3rem", xs: "0rem" },
                 }}>
                 <Box
                     sx={{
@@ -45,8 +46,7 @@ const Contact = () => {
                         fontWeight={"700"}
                         fontSize={"28px"}
                         mb={"0.5rem"}>
-                        Let<span className="span-green">'</span>s work <br />{" "}
-                        together<span className="span-green">!</span>
+                        Let<span>'</span>s work <br /> together<span>!</span>
                     </Typography>
                     <Typography
                         sx={{
@@ -109,6 +109,7 @@ const Contact = () => {
                     </form>
                 </Box>
             </Box>
+            <Links />
         </Box>
     );
 };

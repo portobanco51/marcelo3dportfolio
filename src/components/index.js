@@ -5,4 +5,6 @@ import SkillsContainer from './SkillsContainer'
 
 import ProjectCard from './ProjectCard'
 
-export { NavBar, SkillCard, SkillsContainer, ProjectCard }
+import Links from './Links';
+
+export { NavBar, SkillCard, SkillsContainer, Links, ProjectCard }
