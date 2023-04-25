@@ -76,3 +76,18 @@ span {
     margin: 0 auto;
     filter: drop-shadow(0px 0px 10px #00000090);
 }
+
+.skills-container {
+    animation: scroll 45s linear 0s infinite;
+}
+
+/* ANIMATION */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
