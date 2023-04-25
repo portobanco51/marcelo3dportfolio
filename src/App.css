@@ -77,11 +77,42 @@ span {
     filter: drop-shadow(0px 0px 10px #00000090);
 }
 
-.skills-container {
-    animation: scroll 45s linear 0s infinite;
+.project-card {
+    transition: all 0.9s cubic-bezier(0.54, 1.73, 0.85, 0.81);
+    border: 1px solid #00010a;
+}
+
+.project-card:hover,
+.project-card:focus > * {
+    background-color: #808080;
+    border: 1px solid #445204;
+    z-index: 99;
+}
+
+.git-icon {
+    color: #ffffff90;
+    position: absolute;
+    z-index: 100;
+    min-width: 2.15rem;
+    min-height: 2.15rem;
+    border-radius: 50%;
+    background-color: #000;
+    right: 45%;
+    bottom: -18px;
+    box-shadow: 0px 10px 20px 0px #00000060;
+    transition: all 0.4s cubic-bezier(0.54, 1.73, 0.85, 0.81);
+}
+
+.git-icon:hover,
+.git-icon:focus {
+    color: var(--color-green);
+    scale: 1.1;
 }
 
 /* ANIMATION */
+.skills-container {
+    animation: scroll 45s linear 0s infinite;
+}
 
 @keyframes scroll {
     0% {
