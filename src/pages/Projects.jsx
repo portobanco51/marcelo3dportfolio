@@ -1,11 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
 
 // import { projects } from "../utils/projectsUrls";
 import { ProjectCard } from "../components";
 
+import { fetchData, options } from "../utils/DataFetch";
+
 const Projects = () => {
     const [projectsMeta, setProjectsMeta] = useState([]);
+    const projects = [];
+
+    useEffect(() => {
+        const projectsData = () => {
+            setProjectsMeta([]);
+            const openGraphUrl = "https://og-link-preview.p.rapidapi.com/?url=";
+            const githubUrl = "https://github.com/portobanco51/";
+            projects.forEach(async (e) => {
+                const data = await fetchData(`${openGraphUrl}${e}`, options);
+                const repoUrl = data.title.toLowerCase();
+                setProjectsMeta((prev) => [
+                    ...prev,
+                    {
+                        title: data.title,
+                        url: data.domain,
+                        img: [data.cover || data.favicon],
+                        description: data.description,
+                        git: `${githubUrl}${repoUrl.replace(/\s+/g, "")}`,
+                    },
+                ]);
+            });
+        };
+        projectsData();
+    }, []);
 
     return (
         <Box
