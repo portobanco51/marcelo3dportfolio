@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-const Loading = ({ progress, loaded }) => {
+const Loading = ({ progress = 20, loaded = false }) => {
     return (
         <div className={`loadingBox ${loaded ? "loadingBox-fade" : ""}`}>
             <Box

@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
 
-// import { projects } from "../utils/projectsUrls";
+import { projects } from "../utils/projectsUrls";
 import { ProjectCard } from "../components";
 
 import { fetchData, options } from "../utils/DataFetch";
 
 const Projects = () => {
     const [projectsMeta, setProjectsMeta] = useState([]);
-    const projects = [];
 
     useEffect(() => {
         const projectsData = () => {

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Box, Typography } from "@mui/material";
 import { Links } from "../components";
+import { sendEmail } from "../utils/email";
 
 const Contact = () => {
     const formInfo = useRef();
@@ -66,7 +67,7 @@ const Contact = () => {
                 <Box display={"flex"} minHeight={"12.5rem"}>
                     <form
                         ref={formInfo}
-                        onSubmit={(e) => e.preventDefault}
+                        onSubmit={(e) => sendEmail(e, formInfo)}
                         className="form"
                         color={"#fff"}>
                         <label hidden htmlFor="name"></label>
