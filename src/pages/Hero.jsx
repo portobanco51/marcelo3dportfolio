@@ -12,7 +12,7 @@ const Hero = () => {
                     gap={"1rem"}
                     sx={{
                         px: { sm: "20svw", xs: "1rem" },
-                        mt: { xs: "-40svh", md: "-10svh" },
+                        mt: { xs: "15svh", md: "30svh" },
                     }}>
                     <Typography
                         letterSpacing={"5px"}
@@ -48,7 +48,8 @@ const Hero = () => {
                         }}>
                         Clean code enthusiast<span>,</span> ready to rocket
                         projects outta space with cutting<span>-</span>edge
-                        technologies<span>!</span>
+                        <span>,</span> stable and scalable technologies
+                        <span>!</span>
                     </Typography>
                 </Box>
             </title>

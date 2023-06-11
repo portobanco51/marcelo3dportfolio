@@ -48,7 +48,7 @@ body,
     flex-flow: column nowrap;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     scroll-behavior: smooth;
 }
