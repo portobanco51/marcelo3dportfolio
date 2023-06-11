@@ -44,7 +44,6 @@
 
 ###
 
-
-![Portfolio screenshot](https://github.com/portobanco51/marcelo3dportfolio/assets/76289550/e7d1ccce-1e7f-4b11-a616-ff6bd3f59dba)
+![Portfolio screenshot](https://github.com/portobanco51/marcelo3dportfolio/assets/76289550/d6b9976d-8458-46f6-9a65-73a99429e5a4)
 
 ###
