@@ -36,6 +36,18 @@
         "logo": "icons/git.svg"
     },
     {
+        "name": "PYTHON",
+        "logo": "icons/python.svg"
+    },
+    {
+        "name": "DJANGO",
+        "logo": "icons/django.svg"
+    },
+    {
+        "name": "SQL DATABASE",
+        "logo": "icons/sql.svg"
+    },
+    {
         "name": "SCRUM",
         "logo": "icons/scrum.svg"
     }

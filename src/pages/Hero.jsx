@@ -33,7 +33,7 @@ const Hero = () => {
                         fontSize={"1.5rem"}
                         sx={{ textAlign: { sm: "left", xs: "center" } }}
                         fontWeight={"800"}>
-                        I<span>'</span>m a Front<span>-</span>End Developer
+                        I<span>'</span>m a Full<span>-</span>Stack Developer
                         <span>.</span>
                     </Typography>
 
@@ -47,7 +47,7 @@ const Hero = () => {
                             mx: { sm: "unset", xs: "auto" },
                         }}>
                         Clean code enthusiast<span>,</span> ready to rocket
-                        projects outta space with cutting<span>-</span>edge
+                        projects out of space with cutting<span>-</span>edge
                         <span>,</span> stable and scalable technologies
                         <span>!</span>
                     </Typography>
