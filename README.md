@@ -2,7 +2,7 @@
 
 ###
 
-<h2 align="left">Project Overview 🔎</h2>
+<h2 align="left">Project Brief Overview 🔎</h2>
 
 ###
 
