@@ -29,6 +29,7 @@ const Contact = () => {
                 sx={{
                     flexDirection: { sm: "row", xs: "column" },
                     py: { sm: "1.5rem", xs: "1rem" },
+                    mb: { xs: "0", sm: "4rem" },
                     px: { xs: "1rem", sm: "1rem" },
                     alignItems: { sm: "flex-start", xs: "center" },
                     gap: { sm: "3rem", xs: "0rem" },
@@ -58,18 +59,13 @@ const Contact = () => {
                         fontSize={"11px"}
                         maxWidth={"200px"}
                         fontFamily={"B612 Mono"}>
-                        Once and for all<span>,</span> let<span>'</span>s bring
-                        your project ideas down to Earth and rocket your
-                        business into space<span>!</span>
+                        Once and for all<span>,</span> let<span>'</span>s bring your project ideas down to Earth and
+                        rocket your business into space<span>!</span>
                     </Typography>
                 </Box>
 
                 <Box display={"flex"} minHeight={"12.5rem"}>
-                    <form
-                        ref={formInfo}
-                        onSubmit={(e) => sendEmail(e, formInfo)}
-                        className="form"
-                        color={"#fff"}>
+                    <form ref={formInfo} onSubmit={(e) => sendEmail(e, formInfo)} className="form" color={"#fff"}>
                         <label hidden htmlFor="name"></label>
                         <input
                             name="name"
@@ -103,10 +99,7 @@ const Contact = () => {
                             aria-describedby="message"
                         />
 
-                        <input
-                            className="submit"
-                            type="submit"
-                            value={`${"✔"}`}></input>
+                        <input className="submit" type="submit" value={`${"✔"}`}></input>
                     </form>
                 </Box>
             </Box>
