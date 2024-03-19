@@ -16,6 +16,10 @@
         "logo": "icons/ts.svg"
     },
     {
+        "name": "JEST",
+        "logo": "icons/jest.svg"
+    },
+    {
         "name": "REACT.js",
         "logo": "icons/reactjs.svg"
     },
@@ -28,8 +32,16 @@
         "logo": "icons/nodejs.svg"
     },
     {
+        "name": "NPM",
+        "logo": "icons/npm.svg"
+    },
+    {
         "name": "GIT",
         "logo": "icons/git.svg"
+    },
+    {
+        "name": "GITHUB",
+        "logo": "icons/github.svg"
     },
     {
         "name": "PYTHON",
@@ -40,7 +52,15 @@
         "logo": "icons/django.svg"
     },
     {
-        "name": "SQL DATABASE",
+        "name": "BASH",
+        "logo": "icons/bash.svg"
+    },
+    {
+        "name": "LINUX",
+        "logo": "icons/linux.svg"
+    },
+    {
+        "name": "SQL DATABASES",
         "logo": "icons/sql.svg"
     },
     {
