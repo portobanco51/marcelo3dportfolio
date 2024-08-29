@@ -5,14 +5,7 @@ import { NavBar } from "./components";
 
 import { Hero, SkillsBanner, Projects, Contact, Loading } from "./pages";
 
-import {
-    Space,
-    Titles,
-    Hero3D,
-    Meteorites,
-    Experience,
-    ContactBg,
-} from "./components/canvas";
+import { Space, Titles, Hero3D, Meteorites, Experience, ContactBg } from "./components/canvas";
 
 import "./App.css";
 

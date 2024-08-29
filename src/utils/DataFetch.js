@@ -2,7 +2,7 @@ export const options = {
     method: 'GET',
     headers: {
         'X-RapidAPI-Key': import.meta.env.VITE_REACT_APP_API_KEY,
-        'X-RapidAPI-Host': 'seo-open-graph-scraper.p.rapidapi.com'
+        'X-RapidAPI-Host': 'url-metadata-opengraph.p.rapidapi.com'
     }
 };
 

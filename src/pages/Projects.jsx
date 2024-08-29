@@ -11,20 +11,23 @@ const Projects = () => {
 
     useEffect(() => {
         const projectsData = async () => {
-            const openGraphUrl = "https://seo-open-graph-scraper.p.rapidapi.com/seo?url=";
+            const openGraphUrl = "https://url-metadata-opengraph.p.rapidapi.com/parse?url=";
             const githubUrl = "https://github.com/portobanco51/";
 
             const asyncFetchData = async (projectUrl) => {
-                const { data } = await fetchData(`${openGraphUrl}${projectUrl}`, options);
-                console.log(data);
-                const { ogTitle, ogUrl, ogImage, twitterImage, description } = data;
-                const repoUrl = ogTitle.toLowerCase();
+                const { og } = await fetchData(`${openGraphUrl}${projectUrl}`, options);
+                const {
+                    title: { content: titleContent },
+                    description: { content: descriptionContent },
+                    image: { content: imageContent },
+                } = og;
+                const repoUrl = titleContent.toLowerCase();
 
                 return {
-                    title: ogTitle,
-                    url: ogUrl,
-                    img: [ogImage || twitterImage],
-                    description,
+                    title: titleContent,
+                    url: projectUrl,
+                    img: imageContent,
+                    description: descriptionContent,
                     git: `${githubUrl}${repoUrl.replace(/\s+/g, "")}`,
                 };
             };
