@@ -28,11 +28,11 @@ const Contact = () => {
                 display={"flex"}
                 sx={{
                     flexDirection: { sm: "row", xs: "column" },
-                    py: { sm: "1.5rem", xs: "1rem" },
-                    mb: { xs: "0", sm: "4rem" },
+                    py: { sm: "4rem", xs: "0" },
+                    mb: { xs: "-3rem", sm: "4rem" },
                     px: { xs: "1rem", sm: "1rem" },
                     alignItems: { sm: "flex-start", xs: "center" },
-                    gap: { sm: "3rem", xs: "0rem" },
+                    gap: { sm: "6rem", xs: "0" },
                 }}>
                 <Box
                     sx={{
@@ -43,10 +43,9 @@ const Contact = () => {
                     maxHeight={"10rem"}
                     flexDirection={"column"}>
                     <Typography
-                        sx={{ textAlign: { xs: "center", sm: "left" } }}
+                        sx={{ textAlign: { xs: "center", sm: "left" }, fontSize: { xs: "34px", sm: "46px" } }}
                         fontFamily={"Syne"}
                         fontWeight={"700"}
-                        fontSize={"28px"}
                         mb={"0.5rem"}>
                         Let<span>'</span>s work <br /> together<span>!</span>
                     </Typography>
@@ -54,17 +53,17 @@ const Contact = () => {
                         sx={{
                             textAlign: { xs: "center", sm: "left" },
                             mx: { xs: "auto", sm: "0" },
-                            mb: { xs: "2rem", sm: "0" },
                         }}
-                        fontSize={"11px"}
+                        fontSize={"14px"}
                         maxWidth={"200px"}
+                        fontWeight={"600"}
                         fontFamily={"B612 Mono"}>
                         Once and for all<span>,</span> let<span>'</span>s bring your project ideas down to Earth and
                         rocket your business into space<span>!</span>
                     </Typography>
                 </Box>
 
-                <Box display={"flex"} minHeight={"12.5rem"}>
+                <Box display={"flex"} minHeight={"16.5rem"}>
                     <form ref={formInfo} onSubmit={(e) => sendEmail(e, formInfo)} className="form" color={"#fff"}>
                         <label hidden htmlFor="name"></label>
                         <input

@@ -52,6 +52,14 @@
         "logo": "icons/django.svg"
     },
     {
+        "name": "SQL DATABASE",
+        "logo": "icons/sql.svg"
+    },
+    {
+        "name": "JENKINS",
+        "logo": "icons/jenkins.svg"
+    },
+    {
         "name": "BASH",
         "logo": "icons/bash.svg"
     },
@@ -60,8 +68,8 @@
         "logo": "icons/linux.svg"
     },
     {
-        "name": "SQL DATABASES",
-        "logo": "icons/sql.svg"
+        "name": "POWERSHELL",
+        "logo": "icons/powershell.svg"
     },
     {
         "name": "SCRUM",
