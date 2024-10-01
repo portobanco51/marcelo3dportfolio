@@ -43,10 +43,13 @@ const Contact = () => {
                     maxHeight={"10rem"}
                     flexDirection={"column"}>
                     <Typography
-                        sx={{ textAlign: { xs: "center", sm: "left" }, fontSize: { xs: "34px", sm: "46px" } }}
-                        fontFamily={"Syne"}
-                        fontWeight={"700"}
-                        mb={"0.5rem"}>
+                        sx={{
+                            textAlign: { xs: "center", sm: "left" },
+                            fontSize: { xs: "34px", sm: "34px", md: "46px" },
+                            mb: { xs: "0", md: "0.5rem" },
+                        }}
+                        fontFamily={"var(--font-primary)"}
+                        fontWeight={"700"}>
                         Let<span>'</span>s work <br /> together<span>!</span>
                     </Typography>
                     <Typography
@@ -56,10 +59,11 @@ const Contact = () => {
                         }}
                         fontSize={"14px"}
                         maxWidth={"200px"}
-                        fontWeight={"600"}
-                        fontFamily={"B612 Mono"}>
-                        Once and for all<span>,</span> let<span>'</span>s bring your project ideas down to Earth and
-                        rocket your business into space<span>!</span>
+                        fontWeight={"500"}
+                        fontFamily={"var(--font-secondary)"}>
+                        As a team<span>,</span> we<span>'</span>ll ground your vision to launch exceptional software
+                        solutions
+                        <span>.</span>
                     </Typography>
                 </Box>
 

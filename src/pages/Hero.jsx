@@ -30,17 +30,17 @@ const Hero = () => {
 
                     <Typography
                         fontFamily={"var(--font-primary)"}
-                        fontSize={"1.75rem"}
+                        fontSize={"1.65rem"}
                         sx={{ textAlign: { sm: "left", xs: "center" } }}
-                        fontWeight={"800"}>
-                        I<span>'</span>m a Software Engineer
+                        fontWeight={"600"}>
+                        I<span>'</span>m a Software Automation Engineer
                     </Typography>
 
                     <Typography
                         fontFamily={"var(--font-secondary)"}
                         mx={"auto"}
                         fontSize={"0.9rem"}
-                        fontWeight={"600"}
+                        fontWeight={"500"}
                         sx={{
                             textAlign: { sm: "left", xs: "center" },
                             maxWidth: { sm: "60%", xs: "70%" },
