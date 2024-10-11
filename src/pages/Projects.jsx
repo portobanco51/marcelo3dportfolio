@@ -21,14 +21,17 @@ const Projects = () => {
                     description: { content: descriptionContent },
                     image: { content: imageContent },
                 } = og;
+
                 const repoUrl = titleContent.toLowerCase();
+                const titleText = titleContent.replace(/GitHub - [^/]+\/([^:]+): .+$/, "$1");
+                const ArrowKeysMenuImg = "https://shorturl.at/T0l0b";
 
                 return {
-                    title: titleContent,
-                    url: projectUrl,
-                    img: imageContent,
+                    title: titleText,
+                    url: projectUrl || null,
+                    img: imageContent || ArrowKeysMenuImg,
                     description: descriptionContent,
-                    git: `${githubUrl}${repoUrl.replace(/\s+/g, "")}`,
+                    git: `${githubUrl}${titleText.replace(/\s+/g, "")}`,
                 };
             };
 
