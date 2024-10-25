@@ -6,15 +6,15 @@ on:
 
 jobs:
     test:
-        name: Install and Build with node on "$RUNNER.OS"
+        name: Install and Build with node on ubuntu-latest
         runs-on: ubuntu-latest
 
         steps:
             - uses: actions/checkout@v4
-            - name: Use Node.js ${{ matrix.node_version }}
+            - name: Use Node.js 20.x
               uses: actions/setup-node@v4
               with:
-                  node-version: ${{ matrix.node_version }}
+                  node-version: 20.x
 
             - name: npm install and build
               run: |
