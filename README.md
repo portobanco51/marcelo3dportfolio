@@ -39,11 +39,21 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=materialui" height="45" alt="materialui logo"  />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=fastapi" height="45" alt="fastapi logo"  />
+  <img src="https://skillicons.dev/icons?i=netlify" height="45" alt="netlify logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=githubactions" height="45" alt="githubactins logo"  />
+  <img width="12" />
 </div>
 
 ###
 
-![Portfolio screenshot](https://github.com/portobanco51/marcelo3dportfolio/assets/76289550/b5c0b09e-d58d-4a1a-b57c-44f66f490ab4)
+<h2 align="left">Finally 🏁</h2>
+
+<p align="left">This web portfolio showcases my skills as a developer and my dedication to delivering high-quality, interactive applications. With CI/CD integration via GitHub Actions, updates are deployed seamlessly, enhancing user experience.</p>
+<p align="left">Feel free to explore the portfolio, and I welcome your feedback and collaboration opportunities!</p>
+<p align="left">Thank you for visiting!</p>
 
 ###
+
+![image](https://github.com/user-attachments/assets/38217185-09d8-42a6-bd0d-d494dd494516)
+
