@@ -8,6 +8,8 @@ jobs:
     test:
         name: Install and Build with node on ubuntu-latest
         runs-on: ubuntu-latest
+        env:
+            API_KEY: ${{ secrets.API_KEY }}
 
         steps:
             - uses: actions/checkout@v4
@@ -19,6 +21,7 @@ jobs:
             - name: npm install and build
               run: |
                   npm install
+                  echo VITE_REACT_APP_API_KEY=$API_KEY > .env
                   npm run winBuild --if-present
                   echo Build ready for deployment!
 
