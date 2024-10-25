@@ -33,7 +33,7 @@ const Hero = () => {
                         fontSize={"1.65rem"}
                         sx={{ textAlign: { sm: "left", xs: "center" } }}
                         fontWeight={"600"}>
-                        I<span>'</span>m a Software Automation
+                        I<span>'</span>m a Software Automation Engineer
                     </Typography>
 
                     <Typography

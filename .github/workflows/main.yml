@@ -6,12 +6,8 @@ on:
 
 jobs:
     test:
-        name: Install and Build with node ${{ matrix.node_version }} on ${{ matrix.os }}
-        runs-on: ${{ matrix.os }}
-        strategy:
-            matrix:
-                node_version: ["18.x", "20.x"]
-                os: [ubuntu-latest, windows-latest]
+        name: Install and Build with node on $RUNNER.OS
+        runs-on: ubuntu-latest
 
         steps:
             - uses: actions/checkout@v4
@@ -32,8 +28,7 @@ jobs:
                   name: build
                   path: dist
 
-            - name: Install Netlify CLI
-              run: npm install netlify-cli --save-dev
-
-            - name: Deploy to Netlify
-              run: netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --dir=dist --prod
+            - name: Install Netlify CLI and deploy to prod
+              run: |
+                  npm install netlify-cli --save-dev 
+                  netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --dir=dist --prod
