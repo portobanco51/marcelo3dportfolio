@@ -1,27 +1,39 @@
 on:
-  workflow_dispatch:
-  push:
-    branches: 
-    - master
+    workflow_dispatch:
+    push:
+        branches:
+            - master
 
 jobs:
     test:
-      name: Install and Build with node ${{ matrix.node_version }} on ${{ matrix.os }}
-      runs-on: ${{ matrix.os }}
-      strategy:
-        matrix:
-          node_version: ['18.x', '20.x']
-          os: [ubuntu-latest, windows-latest]
-          
-      steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node_version }}
+        name: Install and Build with node ${{ matrix.node_version }} on ${{ matrix.os }}
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                node_version: ["18.x", "20.x"]
+                os: [ubuntu-latest, windows-latest]
 
-      - name: npm install and build
-        run: |
-          npm install
-          npm run winBuild --if-present
-          echo Build ready for deployment!
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js ${{ matrix.node_version }}
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node_version }}
+
+            - name: npm install and build
+              run: |
+                  npm install
+                  npm run winBuild --if-present
+                  echo Build ready for deployment!
+
+            - name: Upload build artifact
+              uses: actions/upload-artifact@v3
+              with:
+                  name: build
+                  path: dist
+
+            - name: Install Netlify CLI
+              run: npm install netlify-cli --save-dev
+
+            - name: Deploy to Netlify
+              run: netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --dir=dist
