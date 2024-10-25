@@ -18,31 +18,47 @@
 
 ###
 
-<h2 align="left">Technologies & tools 💻🔬</h2>
+</br>
+
+<h2 align="left">CI/CD Integration with GitHub Actions 🔄</h2>
+
+To further enhance the project, I have integrated **Continuous Integration and Continuous Deployment (CI/CD)** using **GitHub Actions**. This feature automates the deployment process, ensuring that updates are delivered efficiently and reliably.
+
+### Benefits:
+- **Faster Delivery**: Automating the deployment process reduces the time between code changes and live updates, allowing for quicker iterations and feedback.
+- **Consistency**: A standardized build and deployment process minimizes the risk of human error, leading to more stable releases.
+- **Scalability**: This CI/CD setup can be easily extended to include additional testing and deployment environments, supporting future growth and complexity of the project.
 
 ###
 
+</br>
+
+<h2 align="left">Technologies & tools 💻🔬</h2>
+
+###
+</br>
+
 <div align="center">
   <img src="https://skillicons.dev/icons?i=react" height="45" alt="react logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=threejs" height="45" alt="threejs logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=git" height="45" alt="git logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=css" height="45" alt="css3 logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=nodejs" height="45" alt="nodejs logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=npm" height="45" alt="npm logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=jest" height="45" alt="jest logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=materialui" height="45" alt="materialui logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=netlify" height="45" alt="netlify logo"  />
-  <img width="12" />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=githubactions" height="45" alt="githubactins logo"  />
-  <img width="12" />
+  <img width="15" />
 </div>
 
 ###
@@ -54,6 +70,8 @@
 <p align="left">Thank you for visiting!</p>
 
 ###
+</br>
 
 ![image](https://github.com/user-attachments/assets/38217185-09d8-42a6-bd0d-d494dd494516)
-
+</br>
+</br>
