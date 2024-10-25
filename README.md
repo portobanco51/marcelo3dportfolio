@@ -1,4 +1,4 @@
-<h1 align="center">Marcelo's 3D Web Portfolio 🚀⚛</h1>
+<h1 align="center">My 3D Web Portfolio 🚀⚛</h1>
 
 ###
 
@@ -60,6 +60,7 @@ To further enhance the project, I have integrated **Continuous Integration and C
   <img src="https://skillicons.dev/icons?i=githubactions" height="45" alt="githubactins logo"  />
   <img width="15" />
 </div>
+</br>
 
 ###
 
@@ -73,5 +74,3 @@ To further enhance the project, I have integrated **Continuous Integration and C
 </br>
 
 ![image](https://github.com/user-attachments/assets/38217185-09d8-42a6-bd0d-d494dd494516)
-</br>
-</br>
