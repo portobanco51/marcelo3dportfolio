@@ -1,13 +1,5 @@
 [
     {
-        "name": "HTML",
-        "logo": "icons/html.svg"
-    },
-    {
-        "name": "CSS",
-        "logo": "icons/css.svg"
-    },
-    {
         "name": "JAVASCRIPT",
         "logo": "icons/js.svg"
     },
@@ -48,6 +40,10 @@
         "logo": "icons/python.svg"
     },
     {
+        "name": "SELENIUM",
+        "logo": "icons/selenium.svg"
+    },
+    {
         "name": "DJANGO",
         "logo": "icons/django.svg"
     },
@@ -58,6 +54,14 @@
     {
         "name": "JENKINS",
         "logo": "icons/jenkins.svg"
+    },
+    {
+        "name": "GITHUB ACTIONS",
+        "logo": "icons/githubactions.svg"
+    },
+    {
+        "name": "TERRAFORM",
+        "logo": "icons/terraform.svg"
     },
     {
         "name": "BASH",
