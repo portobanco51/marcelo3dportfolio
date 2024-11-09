@@ -32,7 +32,7 @@ jobs:
             - name: Generate API keys
               run: |
                   echo VITE_REACT_APP_API_KEY=$API_KEY > .env
-                  echo API keys generated successfully if $? == 0 else exit 1
+                  echo API keys generated successfully
 
             - name: Build project for production
               run: |
