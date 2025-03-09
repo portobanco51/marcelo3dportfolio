@@ -11,26 +11,26 @@ const Projects = () => {
 
     useEffect(() => {
         const projectsData = async () => {
-            const openGraphUrl = "https://url-metadata-opengraph.p.rapidapi.com/parse?url=";
+            const openGraphUrl = "https://link-previewer1.p.rapidapi.com/?q=";
             const githubUrl = "https://github.com/portobanco51/";
 
             const asyncFetchData = async (projectUrl) => {
-                const { og } = await fetchData(`${openGraphUrl}${projectUrl}`, options);
-                const {
-                    title: { content: titleContent },
-                    description: { content: descriptionContent },
-                    image: { content: imageContent },
-                } = og;
+                const { title, description, url, image } = await fetchData(`${openGraphUrl}${projectUrl}`, options);
+                // const {
+                //     title: { content: titleContent },
+                //     description: { content: descriptionContent },
+                //     image: { content: imageContent },
+                // } = og;
+                console.log(title, description, url, image);
 
-                const repoUrl = titleContent.toLowerCase();
-                const titleText = titleContent.replace(/GitHub - [^/]+\/([^:]+): .+$/, "$1");
+                const titleText = title.replace(/GitHub - [^/]+\/([^:]+): .+$/, "$1");
                 const ArrowKeysMenuImg = "https://shorturl.at/T0l0b";
 
                 return {
                     title: titleText,
                     url: projectUrl || null,
-                    img: imageContent || ArrowKeysMenuImg,
-                    description: descriptionContent,
+                    img: titleText == "ArrowKeysMenu" ? ArrowKeysMenuImg : image,
+                    description: description,
                     git: `${githubUrl}${titleText.replace(/\s+/g, "")}`,
                 };
             };
