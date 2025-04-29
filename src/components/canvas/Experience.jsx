@@ -1,14 +1,7 @@
 import { Center, Text3D } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 
-const Experience = ({
-    margin = 1,
-    segments = 16,
-    height = 0.002,
-    spacing = 0.06,
-    bevelSize = 0.01,
-    thickness = 0.09,
-}) => {
+const Experience = ({ margin = 0.8, segments = 16, height = 0.002, spacing = 0.06, bevelSize = 0.01, thickness = 0.09 }) => {
     const { width: w, height: h } = useThree((state) => state.viewport);
     return (
         <group position={[0, -26, -1.9]} scale={0.5}>
@@ -22,7 +15,7 @@ const Experience = ({
                     bevelThickness={thickness}
                     size={h / 22}
                     font={"/fonts/B612Mono.json"}>
-                    {`Executive\nAdministrative\nAssistant\nIBM, 2020`}
+                    {`Web\nDeveloper\nAztec P, 2021`}
                     <meshLambertMaterial emissive={"#919191"} color={"#ffffff"} />
                 </Text3D>
             </Center>
@@ -36,7 +29,7 @@ const Experience = ({
                     bevelThickness={thickness}
                     size={h / 22}
                     font={"/fonts/B612Mono.json"}>
-                    {`           Web\n     Developer` + `\n Aztec P, 2021`}
+                    {`         Front End\n          Engineer` + `\n CommandLink, 2023`}
                     <meshLambertMaterial emissive={"#919191"} color={"#ffffff"} />
                 </Text3D>
             </Center>
@@ -48,13 +41,13 @@ const Experience = ({
                     bevelEnabled
                     bevelSize={bevelSize}
                     bevelThickness={thickness}
-                    size={h / 26}
+                    size={h / 22}
                     font={"/fonts/B612Mono.json"}>
-                    {`Front End \nEngineer` + `\nCommandLink, 2023`}
+                    {`Software\nEngineer` + `\nIntel, 2023`}
                     <meshLambertMaterial emissive={"#919191"} color={"#ffffff"} />
                 </Text3D>
             </Center>
-            <Center left position={[w / 2 - margin, -18, 0]}>
+            <Center left position={[w / 2 - margin + 0.5, -18, 0]}>
                 <Text3D
                     curveSegments={segments}
                     height={height}
@@ -64,7 +57,7 @@ const Experience = ({
                     bevelThickness={thickness}
                     size={h / 22}
                     font={"/fonts/B612Mono.json"}>
-                    {`   Software\n   Engineer` + `\n Intel, now`}
+                    {`     Software Engineer\n         QA Automation` + `\n    Komodo Health, now`}
                     <meshLambertMaterial emissive={"#919191"} color={"#ffffff"} />
                 </Text3D>
             </Center>
