@@ -11,24 +11,19 @@ const Projects = () => {
 
     useEffect(() => {
         const projectsData = async () => {
-            const openGraphUrl = "https://link-previewer1.p.rapidapi.com/?q=";
+            const openGraphUrl = "https://api.linkpreview.net?q=";
             const githubUrl = "https://github.com/portobanco51/";
 
             const asyncFetchData = async (projectUrl) => {
                 const { title, description, url, image } = await fetchData(`${openGraphUrl}${projectUrl}`, options);
-                // const {
-                //     title: { content: titleContent },
-                //     description: { content: descriptionContent },
-                //     image: { content: imageContent },
-                // } = og;
-                console.log(title, description, url, image);
+                // console.log(title, description, url, image);
 
                 const titleText = title.replace(/GitHub - [^/]+\/([^:]+): .+$/, "$1");
                 const ArrowKeysMenuImg = "https://shorturl.at/T0l0b";
 
                 return {
                     title: titleText,
-                    url: projectUrl || null,
+                    url: projectUrl || url,
                     img: titleText == "ArrowKeysMenu" ? ArrowKeysMenuImg : image,
                     description: description,
                     git: `${githubUrl}${titleText.replace(/\s+/g, "")}`,
@@ -40,7 +35,8 @@ const Projects = () => {
                 setProjectsMeta((prev) => [...prev, projectMeta]);
             }
         };
-        projectsData();
+
+        projectsMeta.length < projects.length ? projectsData() : null;
     }, []);
 
     return (
