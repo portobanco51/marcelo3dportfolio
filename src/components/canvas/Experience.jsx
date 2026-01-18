@@ -1,11 +1,11 @@
 import { Center, Text3D } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 
-const Experience = ({ margin = 0.8, segments = 16, height = 0.002, spacing = 0.06, bevelSize = 0.01, thickness = 0.09 }) => {
+const Experience = ({ margin = 0.7, segments = 16, height = 0.002, spacing = 0.03, bevelSize = 0.01, thickness = 0.06 }) => {
     const { width: w, height: h } = useThree((state) => state.viewport);
     return (
         <group position={[0, -26, -1.9]} scale={0.5}>
-            <Center right position={[-w / 2 + margin, -2, 0]}>
+            <Center right position={[-w / 1.9 + margin, -2, 0]}>
                 <Text3D
                     curveSegments={segments}
                     height={height}
@@ -43,11 +43,11 @@ const Experience = ({ margin = 0.8, segments = 16, height = 0.002, spacing = 0.0
                     bevelThickness={thickness}
                     size={h / 22}
                     font={"/fonts/B612Mono.json"}>
-                    {`Software\nEngineer` + `\nIntel, 2023`}
+                    {`Software\nEngineer` + `\nIntel CR, 2023`}
                     <meshLambertMaterial emissive={"#919191"} color={"#ffffff"} />
                 </Text3D>
             </Center>
-            <Center left position={[w / 2 - margin + 0.5, -18, 0]}>
+            <Center left position={[w / 2 - margin, -18, 0]}>
                 <Text3D
                     curveSegments={segments}
                     height={height}
