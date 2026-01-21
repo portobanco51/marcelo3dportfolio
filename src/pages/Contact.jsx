@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import { Links } from "../components";
 import { sendEmail } from "../utils/email";
 
 const Contact = () => {
     const formInfo = useRef();
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     return (
         <Box
@@ -61,23 +62,15 @@ const Contact = () => {
                         maxWidth={"200px"}
                         fontWeight={"500"}
                         fontFamily={"var(--font-secondary)"}>
-                        As a team<span>,</span> we<span>'</span>ll ground your vision to launch exceptional software
-                        solutions
+                        As a team<span>,</span> we<span>'</span>ll ground your vision to launch exceptional software solutions
                         <span>.</span>
                     </Typography>
                 </Box>
 
                 <Box display={"flex"} minHeight={"16.5rem"}>
-                    <form ref={formInfo} onSubmit={(e) => sendEmail(e, formInfo)} className="form" color={"#fff"}>
+                    <form ref={formInfo} onSubmit={(e) => sendEmail(e, formInfo, setIsSubmitting)} className="form" color={"#fff"}>
                         <label hidden htmlFor="name"></label>
-                        <input
-                            name="name"
-                            required={true}
-                            placeholder="Name"
-                            className="form-label"
-                            id="name"
-                            aria-describedby="name"
-                        />
+                        <input name="name" required={true} placeholder="Name" className="form-label" id="name" aria-describedby="name" />
 
                         <label hidden htmlFor="email"></label>
                         <input
@@ -102,7 +95,7 @@ const Contact = () => {
                             aria-describedby="message"
                         />
 
-                        <input className="submit" type="submit" value={`${"✔"}`}></input>
+                        <input className={`submit ${isSubmitting ? "disabled" : ""}`} type="submit" value={`${"✔"}`} disabled={isSubmitting}></input>
                     </form>
                 </Box>
             </Box>

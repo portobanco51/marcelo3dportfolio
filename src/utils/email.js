@@ -4,8 +4,11 @@ import withReactContent from 'sweetalert2-react-content';
 
 const MySwal = withReactContent(Swal)
 
-export const sendEmail = (e, form) => {
+export const sendEmail = async (e, form, setIsSubmitting) => {
+
     e.preventDefault()
+    setIsSubmitting(true);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
     emailjs.sendForm('service_jpqmoxn', 'template_rbt0h7a', form.current, 'UqLVJIJKBSMpzJTBn').then(() => {
         form.current.reset()
@@ -21,6 +24,8 @@ export const sendEmail = (e, form) => {
                 backdrop: 'rgba(0,0,0,0.8)',
             }
         )
+        setIsSubmitting(false);
+
     }, (error) => {
         MySwal.fire(
             {
