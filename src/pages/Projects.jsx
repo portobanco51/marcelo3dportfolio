@@ -24,9 +24,9 @@ const Projects = () => {
                 return {
                     title: titleText,
                     url: projectUrl || url,
-                    img: titleText == "ArrowKeysMenu" ? ArrowKeysMenuImg : image,
+                    img: titleText.toLowerCase().match(/arrowkeysmenu/) ? ArrowKeysMenuImg : image,
                     description: description,
-                    git: `${githubUrl}${titleText.replace(/\s+/g, "")}`,
+                    git: titleText.toLowerCase().match(/maplab/) ? null : `${githubUrl}${titleText.replace(/\s+/g, "")}`,
                 };
             };
 

@@ -70,17 +70,13 @@ const ProjectCard = ({ data }) => {
                     </Typography>
                 </Box>
             </Link>
-            <Link
-                aria-label={`Go to ${git}`}
-                color={"#fff"}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={git}
-                underline="none">
-                <Icon className="git-icon">
-                    <GitHubIcon fontSize="large" />
-                </Icon>
-            </Link>
+            {git && (
+                <Link aria-label={`Go to ${git}`} color={"#fff"} target="_blank" rel="noopener noreferrer" href={git} underline="none">
+                    <Icon className="git-icon">
+                        <GitHubIcon fontSize="large" />
+                    </Icon>
+                </Link>
+            )}
         </Box>
     );
 };
