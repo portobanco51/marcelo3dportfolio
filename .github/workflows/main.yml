@@ -35,9 +35,9 @@ jobs:
             - name: Generate Environment Variables
               run: |
                   echo VITE_REACT_APP_API_KEY=$API_KEY > .env
-                  echo VITE_EMAIL_SERVICE_ID=$EMAIL_SERVICE_ID >> .env
-                  echo VITE_EMAIL_TEMPLATE_ID=$EMAIL_TEMPLATE_ID >> .env
-                  echo VITE_EMAIL_USER_ID=$EMAIL_USER_ID >> .env
+                  echo VITE_SERVICE_ID=$EMAIL_SERVICE_ID >> .env
+                  echo VITE_TEMPLATE_ID=$EMAIL_TEMPLATE_ID >> .env
+                  echo VITE_USER_ID=$EMAIL_USER_ID >> .env
                   echo Environment variables generated successfully
 
             - name: Build project for production
