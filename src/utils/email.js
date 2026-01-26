@@ -2,6 +2,9 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
+const USER_ID = import.meta.env.VITE_USER_ID
 const MySwal = withReactContent(Swal)
 
 export const sendEmail = async (e, form, setIsSubmitting) => {
@@ -10,7 +13,7 @@ export const sendEmail = async (e, form, setIsSubmitting) => {
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    emailjs.sendForm('service_jpqmoxn', 'template_rbt0h7a', form.current, 'UqLVJIJKBSMpzJTBn').then(() => {
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(() => {
         form.current.reset()
         MySwal.fire(
             {
