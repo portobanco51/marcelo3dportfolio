@@ -25,6 +25,7 @@
 To further enhance the project, I have integrated **Continuous Integration and Continuous Deployment (CI/CD)** using **GitHub Actions**. This feature automates the deployment process, ensuring that updates are delivered efficiently and reliably.
 
 ### Benefits:
+
 - **Faster Delivery**: Automating the deployment process reduces the time between code changes and live updates, allowing for quicker iterations and feedback.
 - **Consistency**: A standardized build and deployment process minimizes the risk of human error, leading to more stable releases.
 - **Scalability**: This CI/CD setup can be easily extended to include additional testing and deployment environments, supporting future growth and complexity of the project.
@@ -36,6 +37,7 @@ To further enhance the project, I have integrated **Continuous Integration and C
 <h2 align="left">Technologies & tools 💻🔬</h2>
 
 ###
+
 </br>
 
 <div align="center">
@@ -71,6 +73,7 @@ To further enhance the project, I have integrated **Continuous Integration and C
 <p align="left">Thank you for visiting!</p>
 
 ###
+
 </br>
 
 ![image](https://github.com/user-attachments/assets/38217185-09d8-42a6-bd0d-d494dd494516)
