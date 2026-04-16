@@ -26,7 +26,7 @@ const Projects = () => {
                     url: projectUrl || url,
                     img: titleText.toLowerCase().match(/arrowkeysmenu/) ? ArrowKeysMenuImg : image,
                     description: description,
-                    git: titleText.toLowerCase().match(/maplab/) ? null : `${githubUrl}${titleText.replace(/\s+/g, "")}`,
+                    git: titleText.toLowerCase().match(/komodohealth/) ? null : `${githubUrl}${titleText.replace(/\s+/g, "")}`,
                 };
             };
 
