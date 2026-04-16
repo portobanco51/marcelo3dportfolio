@@ -1,5 +1,5 @@
 export const projects = [
-    'https://www.komodohealth.com/solutions/maplab/',
+    'https://www.komodohealth.com/products/marmot/',
     'https://github.com/portobanco51/ArrowKeysMenu',
     'https://customshirt3d.netlify.app',
     // 'https://marceloportobanco.netlify.app',
